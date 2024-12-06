@@ -1,0 +1,1 @@
+Column names in scores_df: ville, code_commune, code_concat, departement, region, annee, score_sportif, score_economique

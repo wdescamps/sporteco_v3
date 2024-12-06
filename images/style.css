@@ -1,0 +1,282 @@
+/* Styles généraux */
+.stApp {
+    max-width: 100%;
+    background-color: #f8f9fa;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* En-tête moderne */
+.header-container {
+    background: linear-gradient(135deg, #1e3d59 0%, #17a2b8 100%);
+    padding: 2rem;
+    border-radius: 0 0 30px 30px;
+    margin: -6rem -4rem 2rem -4rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.logo-container {
+    background: white;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin: 0.5rem;
+}
+
+.logo-container:hover {
+    transform: translateY(-5px);
+}
+
+.title-container {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem 0;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.header-title {
+    color: white !important;
+    font-size: 3.5rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.header-subtitle {
+    color: rgba(255,255,255,0.9) !important;
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+    text-align: center;
+    margin-top: 1rem !important;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.gif-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.gif-container:hover {
+    transform: scale(1.02);
+}
+
+/* Conteneur principal pour le contenu */
+.main-content {
+    padding: 0 2rem;
+}
+
+/* Ajustement des graphiques */
+.js-plotly-plot, .stPlotlyChart {
+    width: 100% !important;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    padding: 15px;
+    background: white;
+}
+
+/* Correction spécifique pour la pyramide et les graphiques d'analyse */
+.js-plotly-plot .plot-container {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.js-plotly-plot .main-svg {
+    width: 100% !important;
+}
+
+/* Ajustement des colonnes pour les graphiques */
+div[data-testid="stHorizontalBlock"] {
+    gap: 2rem;
+    align-items: stretch;
+    padding: 1rem 0;
+}
+
+div[data-testid="stHorizontalBlock"] > div {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+div[data-testid="stHorizontalBlock"] .stPlotlyChart {
+    flex: 1;
+    width: 100% !important;
+    min-height: 400px;
+}
+
+/* Style pour les conteneurs de graphiques */
+.element-container {
+    width: 100% !important;
+}
+
+.plot-container plotly {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+/* Correction pour les graphiques dans les tabs */
+.stTabs [data-baseweb="tab-panel"] {
+    padding: 1rem;
+}
+
+.stTabs [data-baseweb="tab-panel"] .stPlotlyChart {
+    width: 100% !important;
+    margin: 1rem 0;
+}
+
+/* En-tête */
+h1 {
+    color: #1e3d59;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+h2 {
+    color: #17a2b8;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+h3 {
+    color: #2c3e50;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-bottom: 1rem;
+}
+
+/* Team member styles */
+.team-section {
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 100%;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.team-member {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    width: 200px;
+    margin: 0;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-name {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #1e3d59;
+    font-size: 1.1rem;
+}
+
+/* Conteneurs et cartes */
+.sport-list, .criteria-list, .geo-list {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+}
+
+.sport-item, .eco-item, .criteria-item {
+    background: #ffffff;
+    margin: 12px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border-left: 4px solid #17a2b8;
+}
+
+.sport-item:hover, .eco-item:hover, .criteria-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Tabs personnalisés */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: #ffffff;
+    border-radius: 4px;
+    color: #1e3d59;
+    padding: 0.5rem 1rem;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #17a2b8;
+    color: white;
+}
+
+/* Boutons */
+.stButton>button {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #138496;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Selectbox et inputs */
+.stSelectbox [data-baseweb="select"] {
+    border-radius: 8px;
+}
+
+.stTextInput>div>div>input {
+    border-radius: 8px;
+}
+
+/* Séparateurs */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #17a2b8, transparent);
+    margin: 2rem 0;
+}
+
+/* Animation pour le chargement */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
