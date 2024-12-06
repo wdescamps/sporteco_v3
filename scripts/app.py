@@ -49,7 +49,9 @@ ASSETS = {
     'drive': os.path.join(PATHS['images'], "drive.png"),
     'python': os.path.join(PATHS['images'], "python-removebg-preview.png"),
     'vsc': os.path.join(PATHS['images'], "vsc-removebg-preview.png"),
-    'github': os.path.join(PATHS['images'], "github-removebg-preview.png")
+    'github': os.path.join(PATHS['images'], "github-removebg-preview.png"),
+    'option1': os.path.join(PATHS['images'], "option1.webp"),
+    'option2': os.path.join(PATHS['images'], "option2.webp")
 }
 
 # Color mappings
@@ -1226,10 +1228,10 @@ with tab3:
             st.info("Aucun club n'a été trouvé dans ce département.")
 
     with reveal_opt1_tab:
-        st.image("/Users/clementrossi/Documents/RossiCtrl/sporteco/streamlit.py/images/option1.webp", use_column_width=True)
+        st.image(ASSETS['option1'], use_column_width=True)
 
     with reveal_opt2_tab:
-        st.image("/Users/clementrossi/Documents/RossiCtrl/sporteco/streamlit.py/images/option2.webp", use_column_width=True)
+        st.image(ASSETS['option2'], use_column_width=True)
 
 # Close main-content div
 st.markdown('</div>', unsafe_allow_html=True)
