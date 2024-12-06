@@ -47,9 +47,9 @@ ASSETS = {
     'asana': os.path.join(PATHS['images'], "asana.png"),
     'bigquery': os.path.join(PATHS['images'], "bigquery.png"),
     'drive': os.path.join(PATHS['images'], "drive.png"),
-    'python': "/Users/clementrossi/Documents/RossiCtrl/sporteco/streamlit.py/images/python-removebg-preview.png",
-    'vsc': "/Users/clementrossi/Documents/RossiCtrl/sporteco/streamlit.py/images/vsc-removebg-preview.png",
-    'github': "/Users/clementrossi/Documents/RossiCtrl/sporteco/streamlit.py/images/github-removebg-preview.png"
+    'python': os.path.join(PATHS['images'], "python-removebg-preview.png"),
+    'vsc': os.path.join(PATHS['images'], "vsc-removebg-preview.png"),
+    'github': os.path.join(PATHS['images'], "github-removebg-preview.png")
 }
 
 # Color mappings
